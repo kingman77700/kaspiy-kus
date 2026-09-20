@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каспий құс — куриная продукция и магазины в Актау и Мангистауской области.">
+  <title>Каспий құс — свежая куриная продукция</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="Каспий құс">
+        <span class="logo-real" aria-label="Логотип Каспий құс"></span>
+      </a>
 
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Главная</a>
+        <a href="#catalog">Ассортимент</a>
+        <a href="#stores">Магазины</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">СВЕЖАЯ КУРИНАЯ ПРОДУКЦИЯ</span>
+          <h1>Каспий <span>құс</span></h1>
+          <p>
+            Свежая куриная продукция для дома и кухни.
+            Выбирайте нужную часть курицы и находите ближайший магазин.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-red" href="#catalog">Смотреть ассортимент</a>
+            <a class="btn btn-outline" href="#stores">Найти магазин</a>
+            <a class="btn btn-instagram" href="https://www.instagram.com/kaspi.kus/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          </div>
+          <div class="hero-points">
+            <span>✓ 8 видов продукции</span>
+            <span>✓ 17 магазинов</span>
+            <span>✓ Мангистауская область</span>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="hero-badge">Свежее каждый день</div>
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=1000&q=85"
+            alt="Свежая сырая куриная продукция"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section" id="catalog">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow green">НАШ АССОРТИМЕНТ</span>
+            <h2>Куриная продукция</h2>
+          </div>
+          <p>Выберите продукт, который нужен для вашего блюда.</p>
+        </div>
+
+        <div class="products" id="products"></div>
+      </div>
+    </section>
+
+    <section class="stores section" id="stores">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow green">ГДЕ НАС НАЙТИ</span>
+            <h2>Наши магазины</h2>
+          </div>
+          <p>17 торговых точек. Нажмите на кнопку, чтобы открыть магазин в 2GIS.</p>
+        </div>
+
+        <div class="store-tools">
+          <input id="storeSearch" type="search" placeholder="Поиск по микрорайону или адресу..." aria-label="Поиск магазина">
+          <span id="storeCount"></span>
+        </div>
+
+        <div class="stores-grid" id="storesList"></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacts">
+      <div class="container contact-card">
+        <div>
+          <span class="eyebrow">КАСПИЙ ҚҰС</span>
+          <h2>Заходите в ближайший магазин</h2>
+          <p>Найдите удобную точку на карте 2GIS и приходите за свежей куриной продукцией.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a class="btn btn-instagram" id="instagramLink" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <div class="contact-actions">
+          <a class="btn btn-red" href="#stores">Все магазины</a>
+          <a class="btn btn-instagram" href="https://www.instagram.com/kaspi.kus?stkn=MXV0MGtlNnAzeGc3bA==" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="logo footer-logo"><span class="logo-real" aria-label="Логотип Каспий құс"></span></div>
+      <p>© <span id="year"></span> Каспий құс. Информационный сайт.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
